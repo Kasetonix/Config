@@ -8,9 +8,11 @@ Dependencies:
 
 Cloning the source code:
 ```git clone https://github.com/alacritty/alacritty.git```
+
 ```cd alacritty```
 
 Building:
 ```cd alacritty```
+
 ```cargo build --release```
 
