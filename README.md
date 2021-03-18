@@ -9,13 +9,13 @@ Dependencies:
 
 Cloning the source code:
 
-```git clone https://github.com/alacritty/alacritty.git```
+```git clone https://github.com/alacritty/alacritty.git
 
-```cd alacritty```
+cd alacritty```
 
 Building:
 
-```cd alacritty```
+```cd alacritty
 
-```cargo build --release```
+cargo build --release```
 
