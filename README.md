@@ -44,5 +44,7 @@ You just have to place fonts in ~/.fonts folder (you may have to create it).
 i3-gaps is a fork giving you option to have gaps around windows, which I use in my config
 
 `sudo add-apt-repository ppa:kgilmer/speed-ricer`
+
 `sudo apt update`
+
 `sudo apt-get install i3-gaps-wm`
