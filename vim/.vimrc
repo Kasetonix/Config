@@ -17,6 +17,7 @@ set softtabstop=2 " Deleting multiple spaces in the row
 set encoding=utf-8 " Setting encoding
 set wrap " Wrapping text if it goes beyond screen width
 syntax on " Enabling syntax highlighting
+set timeoutlen=1000 ttimeoutlen=0 " changing delay times
 
 " Theming
 colorscheme gruvbox " Setting Gruvbox theme

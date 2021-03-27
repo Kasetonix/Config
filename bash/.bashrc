@@ -15,6 +15,9 @@ case $- in
       *) return;;
 esac
 
+# Exporting /bin to PATH
+export PATH="/bin:/usr/bin:$PATH" 
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -46,7 +49,6 @@ fi
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
-
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
@@ -126,13 +128,18 @@ fi
   ############
   ### PATH ###
   ############
+  export PATH="$HOME/.apps/:$PATH"
+  export PATH="$HOME/.emacs.d/bin:$PATH"
+  export PATH="$HOME/.apps/spicetify-cli:$PATH"
   export PATH="$HOME/.apps/pico-8:$PATH"
-
+  export PATH="$HOME/.cargo/bin/:$PATH"
+  
   ###############
   ### Aliases ###
   ###############
   alias ll='ls -Alh'
   alias la='ls -Ah'
+  alias lh='ls --format=single-column'
   alias ..='cd ..'
   alias df='df -h'
   alias matrix='cmatrix -a -B -s'
@@ -141,7 +148,6 @@ fi
   alias feh-pic='feh -Z -F ~/Obrazy/* ~/Obrazy/Tapety/*'
   alias sxiv-pic='feh -Z -F ~/Obrazy/* ~/Obrazy/Tapety/*'
   alias speedtest='speedtest-cli --bytes --single'
-  alias Print='figlet -f ascii_shadow.flf -t'
   alias synaptic='sudo synaptic'
   alias c='clear'
   alias cls='clear'
@@ -151,10 +157,18 @@ fi
   alias conf-polybar='vim ~/.config/polybar/config'
   alias conf-bash='vim ~/.bashrc'
   alias conf-vim='vim ~/.vimrc'
+  alias conf-qutebrowser='vim ~/.config/qutebrowser/config.py'
+  alias conf-spicetify='cd ~/.config/spicetify'
   alias Coding='cd ~/Documents/Coding'
   alias clock='tty-clock'
   alias minecraft-screens='cp ~/.minecraft/screenshots/* ~/Pictures/ScreenShots/Other'
   alias empty-trash='rm -r ~/Trashcan/*'
+  alias emacs-term="emacs -nw"
+  alias fetch="neofetch"
+  alias Git="cd ~/Documents/Git"
+  alias name="echo $USER/$HOSTNAME"
+  alias vimtutorshort="vim ~/Documents/VIMTutorSummaries.txt"
+  alias Print="figlet -f ansi-shadow.flf -d /usr/share/figlet/"
 
   #################
   ### Functions ###
@@ -164,12 +178,11 @@ fi
     echo
   	echo "*** System update initialized ***"
   	echo
-  	echo "Entry admin password..."
+  	echo "Enter admin password..."
   	sudo apt-get update -y
   	sudo apt-get dist-upgrade -y
     sudo apt-get upgrade -y
   	sudo apt-get update -y
-  	sudo apt-get autoremove -y
   	echo
   	echo "*** System updated succsesfully! ***"
     echo
@@ -183,5 +196,17 @@ fi
   	LC_ALL="en_US.UTF-8"
   	LANG="en_US.UTF-8"
   	LANGUAGE="en_US:en"
-  	~/Documents/Coding/Shell/bash.sh
+  	/home/kasetonix/Documents/Coding/Shell/bash.sh
   	echo ''
+
+  ###########################  
+  ### Colorful less pages ###
+  ###########################
+    export LESS="-R"
+    export LESS_TERMCAP_mb=$(printf '\e[01;32m')        # enter blinking            mode
+    export LESS_TERMCAP_md=$(printf '\e[01;34;5;75m')   # enter double-bright       mode
+    export LESS_TERMCAP_me=$(printf '\e[0m')            # turn off all appearance   modes (mb, md, so, us)
+    export LESS_TERMCAP_so=$(printf '\e[01;36m')        # enter standout            mode
+    export LESS_TERMCAP_se=$(printf '\e[0m')            # leave standout            mode
+    export LESS_TERMCAP_us=$(printf '\e[04;33;5;200m')  # enter underline           mode
+    export LESS_TERMCAP_ue=$(printf '\e[0m')            # leave underline
