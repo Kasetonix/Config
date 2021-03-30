@@ -1,5 +1,3 @@
-set fish_greeting
-
 ########
 # PATH #
 ########
@@ -24,9 +22,6 @@ set fish_greeting
   alias df='df -h'
   alias matrix='cmatrix -a -B -s'
   alias matrix-blue='cmatrix -a -B -s -C blue'
-  alias lock='i3lock -i ~/Obrazy/Tapety/PixelArt/PixelArt8.png -u'
-  alias feh-pic='feh -Z -F ~/Obrazy/* ~/Obrazy/Tapety/*'
-  alias sxiv-pic='feh -Z -F ~/Obrazy/* ~/Obrazy/Tapety/*'
   alias speedtest='speedtest-cli --bytes --single'
   alias synaptic='sudo synaptic'
   alias c='clear'
@@ -50,28 +45,27 @@ set fish_greeting
   alias name="echo $USER/$HOSTNAME"
   alias vimtutorshort="vim ~/Documents/VIMTutorSummaries.txt"
   alias Print="figlet -f ansi-shadow.flf -d /usr/share/figlet/"
+  alias SchoolHTML="cd ~/Documents/Coding/HTML/School"
 
 #############
 # Functions #
 #############
-function Update
+  function Update
   	clear
     echo
   	echo "*** System update initialized ***"
   	echo
-  	echo "Enter admin password..."
+  	echo "Enter root password..."
   	sudo apt-get update -y
-  	sudo apt-get dist-upgrade -y
     sudo apt-get upgrade -y
-  	sudo apt-get update -y
   	echo
-  	echo "*** System updated succsesfully! ***"
+  	echo "*** System is up-to-date! ***"
     echo
-end
+  end
 
 #############
 # Autostart #
 #############
   /home/kasetonix/Documents/Coding/Shell/fish.sh
-  echo ''
+  echo 
 
