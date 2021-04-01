@@ -10,8 +10,8 @@ call plug#end()
 
 " Editor settings
 set number " Setting line numbers
-set relativenumber " setting relative line numbers
-set tabstop=2 " Setting tab length
+"set relativenumber " setting relative line numbers
+"set tabstop=2 " Setting tab length
 set expandtab " Changing tabs to spaces
 set softtabstop=2 " Deleting multiple spaces in the row
 set encoding=utf-8 " Setting encoding
