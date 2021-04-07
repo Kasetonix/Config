@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Lunar Client
+Comment=Alternative Minecraft Client
+Exec=/home/kasetonix/.apps/LunarClient
+Icon=/home/kasetonix/.apps/lunarclient.png
+Terminal=false
+Type=Application
+StartupNotify=true

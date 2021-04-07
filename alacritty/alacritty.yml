@@ -34,9 +34,9 @@ scrolling:
 
 # Font configuration
 font:
-  size: 14
+  size: 12 
   normal:
-    family: Inconsolata
+    family: DMMono 
 
 # Default Shell
 shell:
@@ -213,3 +213,4 @@ key_bindings:
   - { key: Key0,     mods: Control,                 action: ResetFontSize    }
   - { key: Equals,   mods: Control,                 action: IncreaseFontSize }
   - { key: Minus,    mods: Control,                 action: DecreaseFontSize }
+  - { key: N,        mods: Control,                 action: SpawnNewInstance }

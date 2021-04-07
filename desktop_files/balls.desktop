@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Balls?
+Comment=Play with your... balls?
+Exec=/home/kasetonix/.apps/Balls/Balls_linux.x86_64
+Icon=/home/kasetonix/.apps/Balls/Balls_linux_Data/Resources/UnityPlayer.png
+Terminal=false
+Type=Application
+StartupNotify=true

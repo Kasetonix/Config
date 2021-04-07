@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Pico-8
+Comment=4-bit 2D game engine.
+Exec=/home/kasetonix/.apps/pico-8/pico8
+Icon=/home/kasetonix/.apps/pico-8/lexaloffle-pico8.png
+Terminal=false
+Type=Application
+StartupNotify=true

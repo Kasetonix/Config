@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=MilkmanKarlson
+Comment=Karlson is thirsty
+Exec=/home/kasetonix/.apps/MilkmanKarlson/MilkmanKarlson.x86_64
+Icon=/home/kasetonix/.apps/MilkmanKarlson/MilkmanKarlson_Data/Resources/UnityPlayer.png
+Terminal=false
+Type=Application
+StartupNotify=true

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Jelly Drift
+Comment=car go vroom zoom skrrrt
+Exec=/home/kasetonix/.apps/JellyDrift/JellyDriftLinux.x86_64
+Icon=/home/kasetonix/.apps/JellyDrift/JellyDriftLinux_Data/Resources/UnityPlayer.png
+Terminal=false
+Type=Application
+StartupNotify=true

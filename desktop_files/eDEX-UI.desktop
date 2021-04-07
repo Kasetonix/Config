@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=eDEX-UI
+Comment=Hacky-lookin' Term
+Exec=/home/kasetonix/.apps/eDEX-UI.AppImage
+Icon=/home/kasetonix/.apps/eDEX-UI.png
+Terminal=false
+Type=Application
+StartupNotify=true

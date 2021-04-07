@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Voxatron
+Comment=8-bit 3D game engine.
+Exec=/home/kasetonix/.apps/voxatron/vox
+Icon=/home/kasetonix/.apps/voxatron/lexaloffle-vox.png
+Terminal=false
+Type=Application
+StartupNotify=true

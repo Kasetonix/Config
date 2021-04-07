@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RE:RUN
+Comment=Action, parkour, sword & powerups
+Exec=/home/kasetonix/.apps/RE\:RUN/RERUN_linux.x86_64
+Icon=/home/kasetonix/.apps/RE\:RUN/RERUN_linux_Data/Resources/UnityPlayer.png
+Terminal=false
+Type=Application
+StartupNotify=true

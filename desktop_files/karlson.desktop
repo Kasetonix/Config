@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Karlson
+Comment=Parkous-fps, Milk-Induced action shooter
+Exec=/home/kasetonix/.apps/Karlson/Karlson_linux.x86_64
+Icon=/home/kasetonix/.apps/Karlson/Karlson_linux_Data/Resources/UnityPlayer.png
+Terminal=false
+Type=Application
+StartupNotify=true
