@@ -85,9 +85,16 @@ if not, here's the command:
 **Official Website:**
 *https://qutebrowser.org*
 
-qutebrowser is already in official Ubuntu repositories, you jusst have to install it:
+**GitHub Page:**
+*https://github.com/qutebrowser/qutebrowser*
+
+qutebrowser is already in official Ubuntu repositories, you just have to install it:
 
 `sudo apt install qutebrowser`
+
+It's a really old version, so you probably don't want to use it.
+
+Instead you want to download the source code and compile it
 
 # rofi install
 **GitHub Page:**
