@@ -1,4 +1,4 @@
-# Dotfiles
+e Dotfiles
 **This repo contains most of my own dotfiles files - most important ones.**
 
 # Alacritty install
@@ -8,6 +8,7 @@
 Dependencies: 
 
 `sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3`
+
 
 Cloning the source code:
 
