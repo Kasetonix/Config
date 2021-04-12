@@ -29,6 +29,7 @@
   alias synaptic='sudo synaptic'
   alias c='clear'
   alias cls='clear'
+  alias untar="tar -xf"
   alias conf-i3='vim ~/.config/i3/config'
   alias conf-openbox='cd ~/.config/openbox'
   alias conf-alacritty='vim ~/.config/alacritty/alacritty.yml'
@@ -40,6 +41,7 @@
   alias conf-fish='vim ~/.config/fish/config.fish'
   alias conf-neofetch='vim ~/.config/neofetch/config.conf'
   alias conf-amfora="vim ~/.config/amfora/config.toml"
+  alias conf-zathura="vim ~/.config/zathura/zathurarc"
   alias Coding='cd ~/Documents/Coding'
   alias clock='tty-clock'
   alias minecraft-screens='cp ~/.minecraft/screenshots/* ~/Pictures/ScreenShots/Other'
@@ -49,11 +51,14 @@
   alias fetch-small="neofetch-small"
   alias logo="neofetch -L --ascii_distro $1"
   alias logo-clear='clear && neofetch -L --ascii_distro $1'
+  alias logo-small="neofetch -L --ascii_distro $1_small"
   alias Git="cd ~/Documents/Git"
   alias name="echo $USER/$HOSTNAME"
   alias vimtutorshort="vim ~/Documents/VIMTutorSummaries.txt"
   alias Print="figlet -f ansi-shadow.flf -d /usr/share/figlet/"
   alias SchoolHTML="cd ~/Documents/Coding/HTML/School"
+  alias dwm-make="cd ~/.config/dwm/ && sudo make install && cd -"
+  alias Notes="cd ~/Documents/Notes"
 
 #############
 # Functions #

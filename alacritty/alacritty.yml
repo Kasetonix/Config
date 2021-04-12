@@ -89,13 +89,13 @@ shell:
 colors:
   primary:
     background: '#282828'
-    foreground: '#EBDBB2'
-    dim_foreground: '#D5C4A1'
+    foreground: '#ebdbb2'
+    dim_foreground: '#d5c4a1'
   cursor:
-    text: '#EBDBB2'
+    text: '#ebdbb2'
     cursor: '#282828'
   vi_mode_cursor:
-    text: '#EBDBB2'
+    text: '#ebdbb2'
     cursor: '#282828'
   selection: 
     text: CellForeground
@@ -213,4 +213,4 @@ key_bindings:
   - { key: Key0,     mods: Control,                 action: ResetFontSize    }
   - { key: Equals,   mods: Control,                 action: IncreaseFontSize }
   - { key: Minus,    mods: Control,                 action: DecreaseFontSize }
-  - { key: N,        mods: Control,                 action: SpawnNewInstance }
+  - { key: N,        mods: Control|Shift,           action: SpawnNewInstance }
