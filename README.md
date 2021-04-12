@@ -1,5 +1,5 @@
 # Dotfiles
-This repo contains most of my own dotfiles files - most important ones.
+**This repo contains most of my own dotfiles files - most important ones.**
 
 # Alacritty install
 **GitHub Page:**
@@ -23,6 +23,14 @@ Building:
 
 # Fonts
 You just have to place fonts in ~/.fonts folder (you may have to create it).
+
+# htop install
+**htop Website:**
+*https://htop.dev/*
+
+htop is in most distro's repositories
+
+`sudo apt-get install htop`
 
 # i3 install
 **GitHub Page:**
@@ -53,6 +61,14 @@ i3-gaps is a fork giving you option to have gaps around windows, which I use in 
 
 `sudo apt install i3-gaps-wm`
 
+# Neofetch install
+**GitHub page:**
+*https://github.com/dylanaraps/neofetch*
+
+Neofetch is in most distro's repositories as well
+
+`sudo apt-get iunstall neofetch`
+
 # Polybar install
 **GitHub Page:**
 *https://github.com/polybar/polybar*
@@ -81,6 +97,16 @@ rofi is in official Ubuntu repos as well:
 
 `sudo apt-get install rofi`
 
+# Spicetify install
+**GitHub Page:**
+*https://github.com/khanhas/spicetify-cli*
+
+To install spicetify, you just have to use following command:
+
+`curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh`
+
+and move my dotfiles folder into ~/.config/spicetify/
+
 # Vim install
 **GitHub Page:**
 *https://github.com/vim/vim*
@@ -108,3 +134,11 @@ though you run neovim by typing `nvim` instead of `neovim`
 **SpaceVim**
 
 SpaceVim is a nice 'modpack' for Vim and neovim that comes with some plugs and nice configuration.
+
+# Zathura install
+**Zathura Website:**
+*https://pwmt.org/projects/zathura/*
+
+Zathura is in Ubuntu's main repositories
+
+`sudo apt-get install zathura`
