@@ -2,8 +2,8 @@
 Name=Neovim
 GenericName=Text Editor
 Comment=Edit text files
-Exec=alacritty -e "nvim"
-Terminal=true
+Exec=/usr/bin/alacritty -e "nvim"
+Terminal=false
 Type=Application
 Keywords=Text;editor;
 Icon=nvim
