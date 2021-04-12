@@ -83,7 +83,7 @@ if not, here's the command:
 
 # qutebrowser install
 **Official Website:**
-*qutebrowser.org*
+*https://qutebrowser.org*
 
 qutebrowser is already in official Ubuntu repositories, you jusst have to install it:
 
