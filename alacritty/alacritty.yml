@@ -34,9 +34,11 @@ scrolling:
 
 # Font configuration
 font:
-  size: 12 
+  size: 13
+  #size: 12
   normal:
-    family: DMMono 
+    family: Mononoki Nerd Font
+    #family: SpaceMono Nerd Font Mono 
 
 # Default Shell
 shell:
@@ -127,14 +129,14 @@ colors:
     white: '#FBF1C7'
 
 # Background opacity
-background_opacity: 0.90
+background_opacity: 1 #0.90
 
 # Selection
 selection:
   save_to_clipboard: true
 
 # Allow terminal applications to change Alacritty's window title.
-window.dynamic_title: true
+window.dynamic_title: false #true
 
 # Cursor changing
 cursor:

@@ -16,8 +16,8 @@ config.set('content.javascript.enabled', True, 'devtools://*')
 config.set('content.javascript.enabled', True, 'chrome://*/*')
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
-config.set('content.notifications', True, 'https://www.reddit.com')
-config.set('content.notifications', True, 'https://www.youtube.com')
+config.set('content.notifications.enabled', True, 'https://www.reddit.com')
+config.set('content.notifications.enabled', True, 'https://www.youtube.com')
 
 c.downloads.location.directory = '/home/kasetonix/Downloads'
 
@@ -64,8 +64,8 @@ c.colors.statusbar.caret.selection.bg = '#fe8019'
 c.fonts.default_family = '"Roboto"'
 c.fonts.default_size = '14pt'
 c.fonts.completion.entry = '13pt "Roboto"'
-c.fonts.debug_console = '13pt "Inconsolata"'
-c.fonts.prompts = 'default_size Inconsolata'
+c.fonts.debug_console = '13pt "Mononoki Nerd Font"'
+c.fonts.prompts = 'default_size Mononoki Nerd Font'
 c.fonts.statusbar = '13pt "Roboto"'
 
 c.scrolling.smooth = True
@@ -74,7 +74,7 @@ c.tabs.title.format = '{audio}{current_title}'
 
 c.content.autoplay = False
 
-c.statusbar.hide = True 
+c.statusbar.show = 'never'
 
 c.statusbar.widgets = ["keypress", "url", "scroll"]
 
@@ -85,3 +85,7 @@ c.downloads.remove_finished = 5
 c.tabs.favicons.scale = 0.75
 
 config.load_autoconfig()
+
+# c.content.media.audio_capture = True
+# c.content.media.audio_video_capture = True
+# c.content.media.video_capture = True

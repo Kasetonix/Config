@@ -6,12 +6,14 @@
   export PATH="$HOME/.apps/spicetify-cli:$PATH"
   export PATH="$HOME/.apps/pico-8:$PATH"
   export PATH="$HOME/.apps/voxatron:$PATH"
+  export PATH="$HOME/.apps/qutebrowser:$PATH"
   export PATH="$HOME/.cargo/bin/:$PATH"
 
 #####################
 # Variable Settings #
 #####################
-  set EDITOR "vim"
+  set EDITOR "nvim"
+  set FETCH "macchina-c"
 
 ###########
 # Aliases #
@@ -44,11 +46,9 @@
   alias conf-zathura="vim ~/.config/zathura/zathurarc"
   alias Coding='cd ~/Documents/Coding'
   alias clock='tty-clock'
-  alias minecraft-screens='cp ~/.minecraft/screenshots/* ~/Pictures/ScreenShots/Other'
+  alias minecraft-screens='cp ~/.minecraft/screenshots/* ~/Pictures/ScreenShots/Minecraft'
   alias emacs-term="emacs -nw"
-  alias fetch="neofetch"
   alias neofetch-small="neofetch --ascii_distro Pop_OS_small --disable title underline model packages shell wm_theme font term cpu gpu memory users --block_range 0 7" 
-  alias fetch-small="neofetch-small"
   alias logo="neofetch -L --ascii_distro $1"
   alias logo-clear='clear && neofetch -L --ascii_distro $1'
   alias logo-small="neofetch -L --ascii_distro $1_small"
@@ -56,29 +56,39 @@
   alias name="echo $USER/$HOSTNAME"
   alias vimtutorshort="vim ~/Documents/VIMTutorSummaries.txt"
   alias Print="figlet -f ansi-shadow.flf -d /usr/share/figlet/"
-  alias SchoolHTML="cd ~/Documents/Coding/HTML/School"
   alias dwm-make="cd ~/.config/dwm/ && sudo make install && cd -"
   alias Notes="cd ~/Documents/Notes"
+  alias fm6000="fm6000 -de 'GNOME' -sh 'fish' -phb"
+  alias macchina-c="macchina -b -S -U -c Yellow -t Boron --no-ascii --box-title ' Hi Igor! The current time is '(date +%H:%M)' ' -X Distribution Host Terminal Kernel DesktopEnvironment WindowManager Shell"
+  alias fetch="macchina-c"
+  alias qutebrowser="python3 /home/kasetonix/.apps/qutebrowser/qutebrowser.py"
 
 #############
 # Functions #
 #############
   function Update
-  	clear
-        echo
-  	echo "*** System update initialized ***"
-  	echo
-  	echo "Enter root password..."
-  	sudo apt-get update -y
-        sudo apt-get upgrade -y
-  	echo
-  	echo "*** System is up-to-date! ***"
-    echo
+      clear
+      echo
+      echo "*** System update initialized ***"
+      echo
+      echo "Enter root password..."
+      sudo apt-get update -y
+      sudo apt-get upgrade -y
+      echo
+      echo "*** System is up-to-date! ***"
+      echo
+  end
+
+  function Bad-Apple
+      pwd = $PWD
+      cd /home/kasetonix/Documents/Bad-Apple-Term
+      ./run.sh && cd $pwd
   end
 
 #############
 # Autostart #
 #############
-  neofetch-small
-  # /home/kasetonix/Documents/Coding/Shell/fish.sh
-  # echo 
+  # neofetch-small
+  # fm6000 
+  macchina-c
+  # /home/kasetonix/Documents/Coding/Shell/fish.sh && echo
