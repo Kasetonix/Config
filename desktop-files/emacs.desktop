@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Emacs
-Comment=Text Editor
-Exec=/usr/bin/emacs
-Icon=/home/kasetonix/Pictures/emacs.png
-Terminal=false
-Type=Application
-StartupNotify=true
